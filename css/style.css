@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Pacifico');
+
+
+@media (min-width: 480px){
+    /* For tablets: */
+    .col-sx-1 {width: 8.33%;}
+    .col-sx-2 {width: 16.66%;}
+    .col-sx-3 {width: 20%;}
+    .col-sx-4 {width: 33.33%;}
+    .col-sx-5 {width: 41.66%;}
+    .col-sx-6 {width: 50%;}
+    .col-sx-7 {width: 58.33%;}
+    .col-sx-8 {width: 66.66%;}
+    .col-sx-9 {width: 75%;}
+    .col-sx-10 {width: 83.33%;}
+    .col-sx-11 {width: 91.66%;}
+    .col-sx-12 {width: 100%;}
+
+
+	.kanban-column {margin: 1.5% 0 0 1.5%};
+   }
+
+@media (min-width: 768px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 20%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+	.kanban-column {margin: 1.5% 0 0 1.5%};
+
+   }
+ 
+@media (min-width: 992px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 20%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+ 	.kanban-column {margin: 4.2% 0 0 4.2%};
+}
+
+body {
+    background-color: #265961;
+    font-family: 'Lobster', cursive;
+    color: #FFDD5C;
+}
+
+ul {
+    list-style-type: none;
+}
+
+[class^="btn-"] {
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: inherit;
+	border: 2px solid;
+	background-position: 100% 0;
+	background-size: 300%;
+	transition: 0.4s;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	background-image: linear-gradient(90deg, #FFDD5C, 50%, transparent 50%);
+}
+
+[class^="btn-"]:hover {
+	background-position: 0 100%;
+	color: #227066;
+}
+
+body #kanban-board > h1 {
+    text-align: center;
+    font-size: 65px; 
+    text-shadow: 6px 6px #000;
+}
+
+body #kanban-board .btn-create-column {
+	display: block;
+	margin: auto;
+
+}
+
+body #kanban-board .kanban-column-container {
+	width: 100%;
+
+}
+
+body #kanban-board .kanban-column-container .kanban-column {
+	display: block;
+	float: left;
+    padding: 30px;
+	min-height: 300px;
+    background-color: #227066;
+    border-radius: 20px;
+	text-align: center;
+}
+body #kanban-board .kanban-column-container .kanban-column h2 {
+	margin: auto;
+	display: inline-block;
+}
+[class^="btn-"] {
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: inherit;
+	border: 2px solid;
+	background-position: 100% 0;
+	background-size: 300%;
+	transition: 0.4s;
+}
+
+body #kanban-board .kanban-column-container .kanban-column .btn-delete {
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+body #kanban-board .kanban-column-container .kanban-column .btn-add-card {
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+
+.kanban-card {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 15px;
+    overflow: auto;
+    background-color: #76A665;
+    border-radius: 15px;
+}
+.kanban-card > p {
+    margin-top: 15px;
+    color: #fff;
+}
+.kanban-card-description {
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+}
+
+.kanban-column-card-list {
+    padding: 0;
+}
+
